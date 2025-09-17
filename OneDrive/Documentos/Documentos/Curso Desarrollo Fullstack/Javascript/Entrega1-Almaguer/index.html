@@ -1,13 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8" />
+  <title>Simulador de Divisas con Comisión</title>
+  <!-- Opción A: usa defer para que el JS se ejecute cuando el DOM esté listo -->
+  <script defer src="js/divisas.js"></script>
 </head>
 <body>
-    
+  <h1 id="titulo">Simulador de Divisas con Comisión</h1>
+  <button id="btnIniciar">Iniciar simulación</button>
+
+  <h2>Operaciones</h2>
+  <table border="1" cellpadding="6">
+    <thead>
+      <tr>
+        <th>#</th><th>Monto</th><th>Origen</th><th>Destino</th>
+        <th>TC</th><th>Comisión</th><th>Neto</th>
+      </tr>
+    </thead>
+    <tbody id="tbodyOperaciones"></tbody>
+  </table>
+
+  <p id="resumen"></p>
+
+  <!-- Opción B (alternativa a defer): mover el script aquí abajo
+  <script src="js/divisas.js"></script> -->
 </body>
 </html>
-
-<script src="script.js"></script>
